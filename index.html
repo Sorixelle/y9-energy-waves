@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper teal lighten-2">
+        <a href="#" class="brand-logo">&nbsp;&nbsp;Waves of Energy</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="parallax-container">
+    <div class="parallax"><img src="img/parallax_home.png" /></div>
+    <div class="container center-align">
+      <br><br><br>
+      <h1 class="teal-text text-darken-1">Waves of Energy</h1>
+      <h5 class="white-text">The way energy is always moving around us.</h5>
+      <br><br>
+      <a id="learnMore" class="waves-effect waves-light btn-large center">Learn more</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1 id="content">What are waves?</h1>
+    <br><br>
+    <div class="row">
+      <div class="col s12 m12 l4 center-align">
+        <i class="large material-icons">swap_calls</i>
+        <h4>Vibrations</h4>
+        <p>Waves are the vibration of particles. They vibrate in a specific way
+           to create different types of waves, like light waves or sound waves.</p>
+      </div>
+      <div class="col s12 m12 l4 center-align">
+        <i class="large material-icons">swap_horiz swap_vert</i>
+        <h4>2 types</h4>
+        <p>There are 2 types of waves: transverse and longitudinal (compression).
+           Transverse waves move up and down, whereas longitudinal waves move
+           left and right.</p>
+      </div>
+      <div class="col s12 m12 l4 center-align">
+        <i class="large material-icons">view_list</i>
+        <h4>Atributes</h4>
+        <p>There are many factors that determine how the wave is percieved, such
+           as wavelength (the space between two parts of the wave) and amplitude
+           (the height of the wave).</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer teal lighten-2">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l6">
+          <h5>About</h5>
+          <p>This website was made by Jacob Juric for a Year 9 Science project.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container black-text">
+        &copy; Jacob Juric 2016. This site uses <a href="http://materializecss.com/">Materialize CSS.</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery.smooth-scroll.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript">
+    $('#learnMore').click(function(){
+      $.smoothScroll({ scrollTarget:'#content', offset:-70 })
+    });
+
+    $(document).ready(function(){
+      $('.parallax').parallax();
+    });
+  </script>
+</body>
+</html>
